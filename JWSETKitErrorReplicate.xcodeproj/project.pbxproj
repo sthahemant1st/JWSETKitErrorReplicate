@@ -11,6 +11,7 @@
 		DDEB7EF72C775C8700B17DF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB7EF62C775C8700B17DF5 /* ContentView.swift */; };
 		DDEB7EF92C775C8800B17DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEB7EF82C775C8800B17DF5 /* Assets.xcassets */; };
 		DDEB7EFC2C775C8800B17DF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEB7EFB2C775C8800B17DF5 /* Preview Assets.xcassets */; };
+		DDEB7F042C775CF700B17DF5 /* JWSETKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDEB7F032C775CF700B17DF5 /* JWSETKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEB7F042C775CF700B17DF5 /* JWSETKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = JWSETKitErrorReplicate;
+			packageProductDependencies = (
+				DDEB7F032C775CF700B17DF5 /* JWSETKit */,
+			);
 			productName = JWSETKitErrorReplicate;
 			productReference = DDEB7EF12C775C8700B17DF5 /* JWSETKitErrorReplicate.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DDEB7EE82C775C8700B17DF5;
+			packageReferences = (
+				DDEB7F022C775CF700B17DF5 /* XCRemoteSwiftPackageReference "JWSETKit" */,
+			);
 			productRefGroup = DDEB7EF22C775C8700B17DF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDEB7F022C775CF700B17DF5 /* XCRemoteSwiftPackageReference "JWSETKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amosavian/JWSETKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDEB7F032C775CF700B17DF5 /* JWSETKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDEB7F022C775CF700B17DF5 /* XCRemoteSwiftPackageReference "JWSETKit" */;
+			productName = JWSETKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDEB7EE92C775C8700B17DF5 /* Project object */;
 }
